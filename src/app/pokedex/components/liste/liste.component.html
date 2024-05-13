@@ -1,0 +1,7 @@
+<h1>Pokédex</h1>
+<ul *ngIf="pokedex">
+    <li *ngFor="let p of pokedex.results">
+        {{p.name}} - 
+        <button (click)="getDetail(p.url)">détails</button>
+    </li>
+</ul>
